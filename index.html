@@ -72,6 +72,50 @@
     </script>
     <!--slick-->
 
+    <!-- menu-show -->
+    <script>
+        $(function(){
+          $(".see-more").click(function(){
+            $(".article-img-boxes2").addClass("show");
+            $(this).addClass("hidden");
+            $(".see-close").removeClass("hidden");
+          });
+          $(".see-close").click(function(){
+            $(".article-img-boxes2").removeClass("show");
+            $(this).addClass("hidden");
+            $(".see-more").removeClass("hidden");
+          });
+        });
+        </script>
+    <!-- menu-show -->
+        
+    <!-- scroll-back-script -->
+        <script>
+        jQuery(document).ready(function(){
+            //下から表示させる要素を指定
+            let $pagetop = $('.ScrollTop');
+            $(window).on( 'scroll', function () {
+            //スクロール位置を取得
+            if ( $(this).scrollTop() < 100 ) {
+            $pagetop.removeClass('isActive');
+            } else {
+            $pagetop.addClass('isActive');
+            }
+            });
+
+            //ページ内リンクスムーススクロール
+            $('a[href="A"]').on('click', function () {
+            var href = $(this).attr("href");
+            var target = $(href == "A" || href == "" ? 'html' : href);
+            var position = target.offset().top;
+            $("html, body").animate({scrollTop: position}, 550, "swing");
+            return false;
+            });
+        });
+
+        </script>
+    <!-- scroll-back-script -->
+
 </head>
 
 <body>
@@ -80,10 +124,10 @@
             <div class="header-upper">
                 <h2>飲食店経営を始めるオーナー・店長の方々のためのコラムサイト</h2>
             </div>
-            <div class="header-bottom">
+            <div class="header-site-logo">
                 <img src="column_title.jpg">
-                <h1>飲食店の生産性改善マネジメントお役立ちコラム</h1>
             </div>
+            <h1>飲食店の生産性改善マネジメントお役立ちコラム</h1>
         </div>
     </header>
 
@@ -106,84 +150,85 @@
                 <h3>新着記事</h3>
             </div>
             <div class="article-img-boxes1">
-                <div class="article-img-box">
+                <a  href="" class="article-img-box">
                     <div class="article-img-box-title">
                         <p>生産性</p>
                     </div>
-                    <img src="" alt="img">
+                    <img src="demo-image.jpg" alt="img">
                     <div class="article-img-box-text">
                         <p>チャンスロス防止！飲食店のピークタイムを伸ばすには？</p>
                     </div>
-                </div>
-                <div class="article-img-box">
+                </a>
+                <a href="" class="article-img-box">
                     <div class="article-img-box-title">
                         <p>知識</p>
                     </div>
-                    <img src="" alt="img">
+                    <img src="demo-image.jpg" alt="img">
                     <div class="article-img-box-text">
                         <p>飲食店マネジメント職が知るべき経営指標「FLコスト」とは？</p>
                     </div>
-                </div>
-                <div class="article-img-box">
+                </a>
+                <a href="" class="article-img-box">
                     <div class="article-img-box-title">
                         <p>集客</p>
                     </div>
-                    <img src="" alt="img">
+                    <img src="demo-image.jpg" alt="img">
                     <div class="article-img-box-text">
                         <p>飲食店の集客のコツ教えます。飲食店と顧客分析編</p>
                     </div>
-                </div>
-                <div class="article-img-box">
+                </a>
+                <a href="" class="article-img-box">
                     <div class="article-img-box-title">
                         <p>行列</p>
                     </div>
-                    <img src="" alt="img">
+                    <img src="demo-image.jpg" alt="img">
                     <div class="article-img-box-text">
                         <p>飲食店に行列ができる仕組みとその意外なワケとは？</p>
                     </div>
-                </div>
+                </a>
             </div>
 
             <button class="see-more"><p>もっと見る ＞</p></button>
 
             <div class="article-img-boxes2">
-                <div class="article-img-box">
+                <a href="" class="article-img-box">
                     <div class="article-img-box-title">
                         <p>生産性</p>
                     </div>
-                    <img src="" alt="img">
+                    <img src="demo-image.jpg" alt="img">
                     <div class="article-img-box-text">
                         <p>チャンスロス防止！飲食店のピークタイムを伸ばすには？</p>
                     </div>
-                </div>
-                <div class="article-img-box">
+                </a>
+                <a href="" class="article-img-box">
                     <div class="article-img-box-title">
                         <p>知識</p>
                     </div>
-                    <img src="" alt="img">
+                    <img src="demo-image.jpg" alt="img">
                     <div class="article-img-box-text">
                         <p>飲食店マネジメント職が知るべき経営指標「FLコスト」とは？</p>
                     </div>
-                </div>
-                <div class="article-img-box">
+                </a>
+                <a href="" class="article-img-box">
                     <div class="article-img-box-title">
                         <p>集客</p>
                     </div>
-                    <img src="" alt="img">
+                    <img src="demo-image.jpg" alt="img">
                     <div class="article-img-box-text">
                         <p>飲食店の集客のコツ教えます。飲食店と顧客分析編</p>
                     </div>
-                </div>
-                <div class="article-img-box">
+                </a>
+                <a href="" class="article-img-box">
                     <div class="article-img-box-title">
                         <p>行列</p>
                     </div>
-                    <img src="" alt="img">
+                    <img src="demo-image.jpg" alt="img">
                     <div class="article-img-box-text">
                         <p>飲食店に行列ができる仕組みとその意外なワケとは？</p>
                     </div>
-                </div>
+                </a>
             </div>
+            <button class="see-close hidden"><p>非表示</p></button>
         </main>
         <aside id="aside">
             <div class="aside-container">
@@ -191,37 +236,53 @@
                     <h3>よく読まれている記事</h3>
                 </div>
                 <div class="aside-boxes">
-                    <div class="aside-box">
+                    <a href="" class="aside-box">
                         <div class="aside-box-number">1</div>
                         <div class="aside-box-img">
-                            <img src="" alt="img">
+                            <img src="demo-image2.jpg" alt="img">
                         </div>
                         <div class="aside-box-text">
                             <p>飲食店マネジメント職が知るべき経営指標
                                 「人時売上高」とは？</p>
                         </div>
-                    </div>
-                    <div class="aside-box">
+                    </a>
+                    <a href="" class="aside-box">
                         <div class="aside-box-number">2</div>
                         <div class="aside-box-img">
-                            <img src="" alt="img">
+                            <img src="demo-image2.jpg" alt="img">
                         </div>
                         <div class="aside-box-text">
                             <p>時短店舗必見！コロナ禍の飲食店経営に欠かせない空席対策のコツとは？</p>
                         </div>
-                    </div>
-                    <div class="aside-box">
+                    </a>
+                    <a href="" class="aside-box">
                         <div class="aside-box-number">3</div>
                         <div class="aside-box-img">
-                            <img src="" alt="img">
+                            <img src="demo-image2.jpg" alt="img">
                         </div>
                         <div class="aside-box-text">
                             <p>コロナ禍の飲食店でできる感染症対策と集客施策の両立に欠かせない事は？</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </aside>
+    </div>
+
+    <div class="pages">
+        <ul class="page-list">
+            <li><a href="">1</a></li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a href="">・</a></li>
+            <li><a href="">・</a></li>
+            <li><a href="">・</a></li>
+            <li><a href="">・</a></li>
+            <li><a href="">・</a></li>
+            <li><a href="">・</a></li>
+            <li><a href="">9</a></li>
+        </ul>
+        <a href="" class="page-next">次へ ＞＞</a>  
     </div>
 
 </body>
