@@ -126,6 +126,11 @@ Mainvisual
 .slick-current {
   opacity: 1;
 }
+
+.slick-current:hover {
+  opacity: 0.7;
+}
+
 .thumb {
   margin: 20px 0 0;
 }
@@ -142,6 +147,19 @@ Mainvisual
 
 .slick-list.draggable {
   width:100%;
+  margin-bottom: 30px;
+}
+
+.mainvisual-slide1 {
+  position: relative;
+
+}
+
+.slide-text1 {
+  position: absolute;
+  top:0;
+  width:100%;
+  z-index: 2;
 }
 
 
