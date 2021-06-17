@@ -1,0 +1,285 @@
+/*--------------------------------------
+Basis
+---------------------------------------*/
+html {
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------------------------
+Header
+---------------------------------------*/
+#header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin:0;
+  padding:0;
+  height: 200px;
+}
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-upper {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+
+}
+
+.header-upper h2{
+  margin: 0;
+  color: white;
+}
+
+.header-bottom {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header-bottom img{
+  width:50%;
+}
+
+/*--------------------------------------
+Mainvisual
+---------------------------------------*/
+.mainvisual {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.sliderArea {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  height: 35vw;
+  display: flex;
+  justify-content: center;
+}
+
+.sliderArea.w300 {
+  width:100%;
+}
+.slick-slide {
+  margin: 0 5px;
+  width: 100%;
+}
+.slick-slide img {
+  width: 100%;
+  height:32vw;
+}
+.slick-prev, .slick-next {
+  z-index: 1;
+
+}
+.slick-prev:before, .slick-next:before {
+  display: flex;
+  justify-content:center;
+  background-color: black;
+  border-radius: 50%;
+  color: #000;
+}
+.slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .5;
+}
+.slick-active {
+  opacity: 1;
+}
+.slick-current {
+  opacity: 1;
+}
+.thumb {
+  margin: 20px 0 0;
+}
+.thumb .slick-slide {
+  cursor: pointer;
+}
+.thumb .slick-slide:hover {
+  opacity: .7;
+}
+
+.slick-track{
+  width:100%;
+}
+
+.slick-list.draggable {
+  width:100%;
+}
+
+
+/*--------------------------------------
+Slick-full-screen
+---------------------------------------*/
+
+.full-screen_one.slick-list {
+  width:100%;
+  overflow:visible;
+
+}
+
+.full-screen_one.slider {
+  width:90%;
+  display: flex;
+  justify-content: center;
+
+}
+
+/*--------------------------------------
+Slick-full-option
+---------------------------------------*/
+body {
+  font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  letter-spacing: .025em;
+  line-height: 1.8;
+  margin: 0;
+}
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 14px;
+  }
+}
+.section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+  overflow: hidden;
+}
+.section p._a {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 30px 0 0;
+}
+.section p._a .link {
+  display: inline-block;
+  color: #607D8B;
+  padding-left: 1.3em;
+  text-indent: -1.3em;
+}
+.section p._a .link:before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-top: 2px solid #607D8B;
+  border-right: 2px solid #607D8B;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-right: 10px;
+}
+
+/*--------------------------------------
+Article
+---------------------------------------*/
+.article {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/*--------------------------------------
+Main
+---------------------------------------*/
+#main {
+  width:60%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-img-boxes1 {
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+.article-img-box {
+  width:47%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-img-box-text {
+  padding: 10px;
+}
+
+.see-more {
+  display: flex;
+  justify-content:center;
+  background-color: blueviolet;
+  border-radius: 10px;
+  font-weight: bold;
+  width:200px;
+  border:transparent;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.see-more:hover {
+  opacity: 0.7;
+}
+
+.see-more p{
+  color: white;
+  
+} 
+
+.article-img-boxes2 {
+  width: 100%;
+  display: flex;
+  justify-content:space-between;
+  flex-wrap: wrap;
+}
+
+/*--------------------------------------
+Aside
+---------------------------------------*/
+#aside {
+  width:40%;
+}
+
+.aside-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aside-boxes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*--------------------------------------
+Footer
+---------------------------------------*/
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:blueviolet;
+}
+
+#footer p {
+  color: white;
+}
