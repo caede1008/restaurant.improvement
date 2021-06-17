@@ -416,6 +416,7 @@ Aside
   display: flex;
   justify-content: center;
   width: 55%;
+  height: 10vw;
 }
 
 .aside-box-img img {
