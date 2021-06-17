@@ -247,6 +247,7 @@ Main
 
 .article-img-box {
   width:47%;
+  height: 25vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
