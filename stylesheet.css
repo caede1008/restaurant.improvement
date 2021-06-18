@@ -158,8 +158,8 @@ Mainvisual
 
 .slide-text {
   position: absolute;
-  top:300;
-  left:65;
+  top:300px;
+  left:63px;
   width:400px;
   margin: 0 auto;
   z-index: 2;
@@ -297,8 +297,8 @@ Main
 .article-img-box-title {
   background-color: blueviolet;
   position: relative;
-  left:0;
-  top:38;
+  left:0px;
+  top:38px;
   width:30%;
   display: flex;
   justify-content: center;
@@ -437,8 +437,8 @@ Aside
   width:10%;
   height:3vw;
   position:absolute;
-  top:14;
-  left:12;
+  top:14px;
+  left:12px;
   display: flex;
   justify-content: center;
   align-items: center;
