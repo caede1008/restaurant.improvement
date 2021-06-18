@@ -7,6 +7,7 @@ html {
     padding: 0;
     font-size: 1rem;
     opacity: 0.9;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 body {
@@ -78,10 +79,10 @@ Header
 Mainvisual
 ---------------------------------------*/
 .mainvisual {
-    width:100%;
+    width:85%;
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     margin-bottom: 50px;
 }
@@ -89,7 +90,7 @@ Mainvisual
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  height: 35vw;
+  height: 30vw;
   display: flex;
   justify-content: center;
 }
@@ -147,21 +148,32 @@ Mainvisual
 
 .slick-list.draggable {
   width:100%;
-  margin-bottom: 30px;
+  margin-bottom:30px;
 }
 
-.mainvisual-slide1 {
+.mainvisual-slide {
   position: relative;
 
 }
 
-.slide-text1 {
+.slide-text {
   position: absolute;
-  top:0;
-  width:100%;
+  top:300;
+  left:65;
+  width:400px;
+  margin: 0 auto;
   z-index: 2;
+  background-color:blueviolet;
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+
 }
 
+.slider-text-accent{
+  border-bottom: white solid 1px;
+}
 
 /*--------------------------------------
 Slick-full-screen
@@ -292,7 +304,7 @@ Main
   align-items: center;
 }
 
-.article-img-box-title p {
+.article-img-box-title a {
   color: white ;
   font-weight: bold;
   margin: 0;
@@ -302,6 +314,7 @@ Main
 .article-img-box-text {
   padding: 10px;
 }
+
 
 .see-more {
   display: flex;
@@ -412,7 +425,7 @@ Aside
   position: relative;
 }
 
-.aside-box:hover {
+.aside-box a:hover {
   opacity: 0.7;
 }
 
@@ -502,5 +515,72 @@ Footer
 }
 
 #footer p {
+  color: white;
+}
+
+/*--------------------------------------
+
+---------------------------------------*/
+.sns-list {
+  width:90%;
+  display: flex;
+  justify-content:space-between
+
+}
+
+.twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 2vw;
+  width:10%;
+  background-color:rgb(29,161,242);
+}
+
+.fab.fa-twitter {
+    color: white;
+}
+
+.facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 2vw;
+  width:10%;
+  background-color:rgb(59,89,152);
+}
+
+.fab.fa-facebook-f {
+    color: white;
+}
+
+.google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 2vw;
+  width:10%;
+  background-color:#d34836;
+
+}
+
+.fab.fa-google-plus-g{
+  color: white;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  height: 2vw;
+  width:10%;
+  background-color: #00B900;
+}
+
+.fab.fa-line{
   color: white;
 }
