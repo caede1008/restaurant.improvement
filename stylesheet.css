@@ -34,7 +34,7 @@ Header
   justify-content: center;
   margin:0;
   padding:0;
-  height:110px;
+  height:100px;
   margin-bottom: 50px;
 }
 
@@ -158,8 +158,8 @@ Mainvisual
 
 .slide-text {
   position: absolute;
-  top:300px;
-  left:63px;
+  top:220px;
+  left:45px;
   width:400px;
   margin: 0 auto;
   z-index: 2;
@@ -174,6 +174,7 @@ Mainvisual
 .slider-text-accent{
   border-bottom: white solid 1px;
 }
+
 
 /*--------------------------------------
 Slick-full-screen
@@ -259,6 +260,7 @@ Main
 
 .main-title {
   border-bottom: blueviolet solid 2px;
+  margin-bottom: 30px;
 }
 
 .main-title h3 {
@@ -296,9 +298,9 @@ Main
 
 .article-img-box-title {
   background-color: blueviolet;
-  position: relative;
+  position: absolute;
   left:0px;
-  top:38px;
+  top:0px;
   width:30%;
   display: flex;
   justify-content: center;
@@ -437,8 +439,8 @@ Aside
   width:10%;
   height:3vw;
   position:absolute;
-  top:14px;
-  left:12px;
+  top:11px;
+  left:0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -522,6 +524,241 @@ Footer
 #footer p {
   color: white;
 }
+
+/*--------------------------------------
+Index-Pad
+---------------------------------------*/
+@media screen and (max-width:1024px) {
+}
+
+/*--------------------------------------
+Index-SP
+---------------------------------------*/
+@media screen and (max-width: 767px) {
+
+/*--------------------------------------
+Header
+---------------------------------------*/
+#header {
+  height: 17vw;
+}
+
+.header-container h1 {
+  font-size: 0.8rem;
+}
+
+.header-site-logo img {
+  width:70%;
+}
+
+.header-upper h2 {
+  font-size:0.6rem;
+}
+
+
+/*--------------------------------------
+Mainviasual
+---------------------------------------*/
+.mainvisual {
+  width:90%;
+  height:40vw;
+}
+
+.sliderArea {
+  height: 50vw;
+}
+
+.slick-list.draggable {
+  margin-bottom: 0;
+}
+
+.slide-text {
+  position: absolute;
+  top:90px;
+  left:13px;
+  width:100px;
+  margin: 0 auto;
+  z-index: 2;
+  background-color:blueviolet;
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+  font-size: 0.6rem;
+  vertical-align:middle;
+}
+
+/*--------------------------------------
+Article
+---------------------------------------*/
+.article {
+  justify-content:center;
+  flex-direction: column;  
+}
+
+/*--------------------------------------
+Main
+---------------------------------------*/
+#main {
+  width:100%;
+}
+
+.main-title {
+  border-bottom: blueviolet solid 2px;
+  margin: 0 auto;
+  margin-bottom:10px;
+}
+
+.main-title h3 {
+  margin:0 auto;
+  font-size: 1.1rem;
+}
+
+/*--------------------------------------
+Article
+---------------------------------------*/
+.article-img-boxes1{
+  flex-direction: column;
+}
+
+.article-img-box {
+  width: 80%;
+  margin: 0 auto;
+  height: 55vw;
+  margin-bottom: 20px;
+}
+
+.article-img-box img {
+  height: 35vw;
+}
+
+.article-img-box-title {
+  position:absolute;
+  top:10px;
+  width:25%;
+}
+
+.article-img-box-title a {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px;
+}
+
+.article-img-box-text{
+  padding: 0;
+}
+
+.article-img-box-text a{
+  font-size: 0.9rem;
+}
+/*--------------------------------------
+Aside
+---------------------------------------*/
+#aside {
+  width:100%;
+}
+
+.aside-box {
+  height: 45vw;
+}
+
+.aside-box-img {
+  display: flex;
+  justify-content: center;
+  width:55%;
+  height:40vw;
+  margin:0;
+}
+
+.aside-box-img img{
+  width: 100%;
+  height: 35vw;
+  margin: 0;
+  padding: 0;
+}
+
+/*--------------------------------------
+Pages
+---------------------------------------*/
+.pages {
+  flex-direction: column;
+}
+
+.page-list{
+  justify-content: center;
+  padding: 0;
+}
+
+.page-list li{
+  padding: 0;
+  margin: 0 5px;
+  margin-top: 20px;
+}
+
+.page-next {
+  width:30%;
+}
+
+/*--------------------------------------
+Footer
+---------------------------------------*/
+#footer p {
+  font-size: 0.6rem;
+}
+
+}
+
+/*--------------------------------------
+Absolute-arrange
+---------------------------------------*/
+
+@media screen and (max-width:374px) {
+
+.slide-text {
+  top:70px;
+  left:23px;
+  width:100px;
+  font-size: 0.45rem;
+
+}
+
+.article-img-box-title {
+  top:3px;
+}
+
+}
+
+@media screen and (max-width:413px) {
+  .slide-text {
+    top:90px;
+    left:30px;
+    width:110px;
+    font-size: 0.45rem;
+  
+  }
+  
+  .article-img-box-title {
+    top:10px;
+  }
+
+}
+
+@media screen and (max-width:767px) {
+  .slide-text {
+    top:100px;
+    left: 40px;
+    width:110px;
+    font-size: 0.45rem;
+  
+  }
+  
+  .article-img-box-title {
+    top:10px;
+  }
+
+}
+
+
 
 /*--------------------------------------
 
