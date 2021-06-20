@@ -299,8 +299,8 @@ Main
 .article-img-box-title {
   background-color: blueviolet;
   position: absolute;
-  left:0px;
-  top:0px;
+  left:3px;
+  top:3px;
   width:30%;
   display: flex;
   justify-content: center;
@@ -439,8 +439,8 @@ Aside
   width:10%;
   height:3vw;
   position:absolute;
-  top:11px;
-  left:0px;
+  top:15px;
+  left:3px;
   display: flex;
   justify-content: center;
   align-items: center;
