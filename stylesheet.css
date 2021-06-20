@@ -531,7 +531,7 @@ Index-Pad
 @media screen and (max-width:1024px) {
   .slide-text {
     position: absolute;
-    top:100px;
+    top:10px;
     left:30px;
     width:200px;
     margin: 0 auto;
@@ -611,8 +611,8 @@ Index-Pad
 @media screen and (max-width:768px) {
   .slide-text {
     position: absolute;
-    top:80px;
-    left:50px;
+    top:100px;
+    left:70px;
     width:250px;
     margin: 0 auto;
     z-index: 2;
