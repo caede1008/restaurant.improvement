@@ -529,7 +529,116 @@ Footer
 Index-Pad
 ---------------------------------------*/
 @media screen and (max-width:1024px) {
+  .slide-text {
+    position: absolute;
+    top:200px;
+    left:30px;
+    width:400px;
+    margin: 0 auto;
+    z-index: 2;
+    background-color:blueviolet;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+  
+  }
+
+  .article-img-box {
+    width:47%;
+    height:30vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .article-img-box-title {
+    background-color: blueviolet;
+    position: absolute;
+    left:0px;
+    top:17px;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aside-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 18vw;
+    margin: 0;
+    border-bottom:grey solid 1px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .aside-box-number {
+    background-color: blueviolet;
+    color:white;
+    width:10%;
+    height:3vw;
+    position:absolute;
+    top:11px;
+    left:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    font-weight: bold;
+  }
+  
+  .aside-box-img {
+    display: flex;
+    justify-content: center;
+    width:55%;
+    height:15vw;
+    margin:0;
+  }
+  
+  .aside-box-img img{
+    width: 100%;
+    height: 14vw;
+    margin: 0;
+    padding: 0;
+  }
+  
 }
+
+@media screen and (max-width:768px) {
+  .slide-text {
+    position: absolute;
+    top:120px;
+    left:50px;
+    width:250px;
+    margin: 0 auto;
+    z-index: 2;
+    background-color:blueviolet;
+    opacity: 0.8;
+    color: white;
+    text-align: center;
+    font-size: 0.8rem;
+  
+  }
+
+
+
+  .article-img-box-title {
+    background-color: blueviolet;
+    position: absolute;
+    left:0px;
+    top:8px;
+    width:30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
 
 /*--------------------------------------
 Index-SP
