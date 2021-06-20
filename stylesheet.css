@@ -711,6 +711,46 @@ Footer
 /*--------------------------------------
 Absolute-arrange
 ---------------------------------------*/
+@media screen and (max-width:767px) {
+  .slide-text {
+    top:100px;
+    left:40px;
+    width:110px;
+    font-size: 0.45rem;
+  
+  }
+  
+  .article-img-box-title {
+    top:10px;
+  }
+
+  .aside-box-number {
+    height:9vw;
+  }
+
+
+
+}
+
+@media screen and (max-width:413px) {
+  .slide-text {
+    top:85px;
+    left:30px;
+    width:110px;
+    font-size: 0.45rem;
+  
+  }
+  
+  .article-img-box-title {
+    top:10px;
+  }
+
+  .aside-box-number {
+    height:8vw;
+  }
+
+}
+
 
 @media screen and (max-width:374px) {
 
@@ -726,37 +766,14 @@ Absolute-arrange
   top:3px;
 }
 
+.aside-box-number {
+  height:7vw;
 }
-
-@media screen and (max-width:413px) {
-  .slide-text {
-    top:90px;
-    left:30px;
-    width:110px;
-    font-size: 0.45rem;
-  
-  }
-  
-  .article-img-box-title {
-    top:10px;
-  }
 
 }
 
-@media screen and (max-width:767px) {
-  .slide-text {
-    top:100px;
-    left: 40px;
-    width:110px;
-    font-size: 0.45rem;
-  
-  }
-  
-  .article-img-box-title {
-    top:10px;
-  }
 
-}
+
 
 
 
