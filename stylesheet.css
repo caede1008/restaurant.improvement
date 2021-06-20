@@ -493,7 +493,7 @@ Pages
 .page-next {
   background-color: blueviolet;
   border-radius: 5px;
-  width:7%;
+  width:10%;
   display: flex;
   justify-content: center;
   padding: 5px 0px;
@@ -531,16 +531,16 @@ Index-Pad
 @media screen and (max-width:1024px) {
   .slide-text {
     position: absolute;
-    top:200px;
+    top:100px;
     left:30px;
-    width:400px;
+    width:200px;
     margin: 0 auto;
     z-index: 2;
     background-color:blueviolet;
     opacity: 0.8;
     color: white;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
   
   }
 
@@ -611,7 +611,7 @@ Index-Pad
 @media screen and (max-width:768px) {
   .slide-text {
     position: absolute;
-    top:120px;
+    top:80px;
     left:50px;
     width:250px;
     margin: 0 auto;
@@ -630,7 +630,7 @@ Index-Pad
     background-color: blueviolet;
     position: absolute;
     left:0px;
-    top:8px;
+    top:3px;
     width:30%;
     display: flex;
     justify-content: center;
